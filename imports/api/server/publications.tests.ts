@@ -3,9 +3,9 @@
 // https://guide.meteor.com/testing.html
 
 import { assert } from 'chai';
-import { Links } from '../links.js';
+import { Links } from '../links.ts';
 import { PublicationCollector } from 'meteor/johanbrook:publication-collector';
-import './publications.js';
+import './publications.ts';
 
 describe('links publications', function () {
   beforeEach(function () {
