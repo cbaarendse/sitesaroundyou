@@ -5,14 +5,15 @@
         "moduleResolution": "node",
         "alwaysStrict": true,
         "sourceMap": true,
-        "jsx": "react",
+        "jsx": "preserve",
         "allowJs": false,
         "noImplicitAny": false,
         "strictNullChecks": false,
         "emitDecoratorMetadata": true,
     },
     "include": [
-        "client/**/*"
+        "client/**/*",
+        "./src/ts/**/*"
     ],
     "exclude": [
         ".meteor",
