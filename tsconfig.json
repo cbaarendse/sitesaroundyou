@@ -1,12 +1,21 @@
 {
     "compilerOptions": {
-        "module": "commonjs",
         "target": "es6",
+        "module": "commonjs",
         "moduleResolution": "node",
+        "alwaysStrict": true,
+        "sourceMap": true,
+        "jsx": "react",
+        "allowJs": false,
+        "noImplicitAny": false,
+        "strictNullChecks": false,
         "emitDecoratorMetadata": true,
-        "sourceMap": true
     },
+    "include": [
+        "client/**/*"
+    ],
     "exclude": [
+        ".meteor",
         "node_modules"
     ]
 }
