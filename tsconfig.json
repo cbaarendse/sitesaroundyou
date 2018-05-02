@@ -9,7 +9,8 @@
         "allowJs": false,
         "noImplicitAny": false,
         "strictNullChecks": false,
-        "emitDecoratorMetadata": true
+        "emitDecoratorMetadata": true,
+        "allowSyntheticDefaultImports": true
     },
     "include": [
         "client/**/*",
