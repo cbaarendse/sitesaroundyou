@@ -23,3 +23,5 @@ johanbrook:publication-collector  # Test a Meteor publication by collecting its 
 
 
 static-html
+barbatus:typescript
+check

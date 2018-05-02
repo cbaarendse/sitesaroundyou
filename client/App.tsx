@@ -4,7 +4,13 @@ import React from 'react';
 import { Meteor } from 'meteor/meteor';
 import ReactDOM from 'react-dom';
 
-import { App } from '../imports/ui/app';
+class App extends React.Component {
+    render() {
+        return (
+            <h1>Hallo Wereld!</h1>
+        )
+    }
+}
 
 Meteor.startup(() => {
     ReactDOM.render(<App />, document.getElementById('render-target'));
