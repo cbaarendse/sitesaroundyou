@@ -1,11 +1,12 @@
 {
     "compilerOptions": {
         "target": "es6",
+        "lib": ["dom"],
         "module": "commonjs",
         "moduleResolution": "node",
         "alwaysStrict": true,
         "sourceMap": true,
-        "jsx": "preserve",
+        "jsx": "react",
         "allowJs": false,
         "noImplicitAny": false,
         "strictNullChecks": false,

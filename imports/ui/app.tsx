@@ -1,16 +1,35 @@
 // Client entry point, imports all client code
 
-import React from 'react';
+import * as React from 'react';
 import { Meteor } from 'meteor/meteor';
-import ReactDOM from 'react-dom';
+import * as ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
-class App extends React.Component {
-    render() {
-        return (
-            <h1>Hallo Wereld!</h1>
-        )
-    }
-}
+import { Home } from '../ui/Home';
+import { Map } from '../ui/Map';
+import { About } from '../ui/About';
+
+// Set up all routes in the app
+const App = () => (
+    <div>
+        <nav>
+            <Link to='/'>Home</Link>
+            <Link to='/map'>Map</Link>
+            <Link to='/about'>About</Link>
+        </nav>
+        <div>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/map' component={Map} />
+            <Route exact path='/about' component={About} />
+
+        </div>
+    </div>
+)
 
 
-ReactDOM.render(<App />, document.getElementById('render-target'));
+ReactDOM.render(
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>, document.getElementById('render-target')
+);
+
