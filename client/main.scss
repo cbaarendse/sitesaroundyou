@@ -1,1 +1,67 @@
 @import "{}/imports/ui/not-found.scss";
+
+div#render-target {
+
+    display: grid;
+    justify-content: space-evenly;
+}
+
+nav.navigation {
+
+    font-size: 4em;
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+   
+    padding: 1em;
+    border: 2px;
+
+}
+
+nav a:link {
+
+    padding: 0.2em;
+    border: 2px;
+    border-color: darkgray;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    color: darkblue;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+
+    padding: 0.2em;
+    border: 2px;
+    border-color: darkgray;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+
+}
+
+nav a:active {
+
+    padding: 0.2em;
+    border: 2px;
+    border-color: red;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    text-decoration-color: red;
+
+}
+
+// Home, About and Map components are content elements, within wrapper div
+
+div.contentWrapper {
+
+    padding: 0em;
+
+}
+
+div.content {
+
+    font-family: Helvetica, sans-serif;
+    font-size: 1.2em;
+
+}
