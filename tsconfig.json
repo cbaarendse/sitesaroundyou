@@ -1,7 +1,9 @@
 {
     "compilerOptions": {
         "target": "es6",
-        "lib": ["dom"],
+        "lib": [
+            "dom"
+        ],
         "module": "commonjs",
         "moduleResolution": "node",
         "alwaysStrict": true,
@@ -11,7 +13,10 @@
         "noImplicitAny": false,
         "strictNullChecks": false,
         "emitDecoratorMetadata": true,
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "types": [
+            "node"
+        ]
     },
     "include": [
         "client/**/*",
