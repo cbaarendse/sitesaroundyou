@@ -6,7 +6,7 @@ import * as ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
 import { Home } from '../ui/Home';
-import { Map } from '../ui/Map';
+import Map from '../ui/Map';
 import { About } from '../ui/About';
 
 // Set up all routes in the app
@@ -17,7 +17,7 @@ const App = () => (
             <Link to='/map' >Map</Link>
             <Link to='/about' >About</Link>
         </nav>
-        <div className='contentWrapper'>
+        <div id='contentWrapper'>
             <Route exact path='/' component={Home} />
             <Route exact path='/map' component={Map} />
             <Route exact path='/about' component={About} />
