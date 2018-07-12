@@ -14,10 +14,9 @@ class Map extends React.Component {
         this.panToArcDeTriomphe = this.panToArcDeTriomphe.bind(this);
     }
     componentDidMount() {
-        let self = this;
         loadScript("https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDWA3Cu8evQ2b2tviD5jWO4mXktyPnQnlY", function () {
-            console.log('ready to render', self);
-            self.map = new googleMapsClient.maps.Map(self.refs.map, { center: { lat: 48.858608, lng: 2.294471 }, zoom: 16 });
+            console.log('ready to render', this);
+            this.map = new googleMapsClient.maps.Map(this.refs.map, { center: { lat: 48.858608, lng: 2.294471 }, zoom: 16 });
         });
         this.map = new googleMapsClient.maps.Map(this.refs.map, { center: { lat: 48.858608, lng: 2.294471 }, zoom: 16 });
     }
